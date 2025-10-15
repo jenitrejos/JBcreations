@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo jb creations.png" type="image/png"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JBCreations</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Asegúrate de tener el archivo favicon.ico en tu carpeta -->
+
+</head>
+<body>
+
+  <header> 
+  <!-- ============================
+     HEADER: carruseles tipo "slide"
+     ============================ -->
+  <div class="text-center py-3" style="background:#ffe6f2; border-bottom:2px solid #f5b5d0;">
+  <div class="d-flex justify-content-center align-items-center">
+
+    <!-- Carrusel izquierdo (SLIDE) -->
+    <div id="iconoIzquierdo" class="carousel slide me-3"
+     data-bs-ride="carousel" data-bs-interval="2000"
+     style="width:150px; height:150px;">
+      <div class="carousel-inner rounded-circle overflow-hidden shadow-sm">
+        <div class="carousel-item active">
+          <img src="snoopy.png" class="d-block w-100 h-100" alt="icono1" style="object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="flores.png" class="d-block w-100 h-100" alt="icono2" style="object-fit:cover;">
+        </div>
+      </div>
+    </div>
+
+    <!-- TITULO (fijo) -->
+    <h1 class="mb-0 fw-bold" style="color:#d63384; font-family:Georgia, serif; font-size:2.4rem;">
+      JB Creations
+    </h1>
+
+    <!-- Carrusel derecho (SLIDE) -->
+    <div id="iconoDerecho" class="carousel slide ms-3"
+     data-bs-ride="carousel" data-bs-interval="2000"
+     style="width:150px; height:150px;">
+      <div class="carousel-inner rounded-circle overflow-hidden shadow-sm">
+        <div class="carousel-item active">
+          <img src="flores.png" class="d-block w-100 h-100" alt="iconoA" style="object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="snoopy.png" class="d-block w-100 h-100" alt="iconoB" style="object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </header>
+
+  <nav>
+    <a href="#mision">Arreglos florales, tejidos, manualidades y más con amor y arte</a>
+  </nav>
+
+  <!-- Misión y Visión con botones -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Misión</h3>
+            <p class="card-text">
+            <a href="mision .html" class="btn btn-outline-primary">Leer más sobre nuestra misión</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Visión</h3>
+            <p class="card-text">
+            <a href="vision .html" class="btn btn-outline-success">Leer más sobre nuestra visión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <p> Arreglos florales personalizados<br> Tejidos hechos a mano<br> Manualidades decorativas</p>
+    <a href="catalogo .html" class="btn btn-outline-secondary m-2">Ver catálogo</a>
+     <a href="opiniones .html" class="btn btn-outline-secondary m-2">Opiniones</a>
+  </section>
+
+  <section id="ubicacion">
+    <h2>ubicacion</h2>
+    <p> Arreglos florales personalizados<br> Tejidos hechos a mano<br> Manualidades decorativas</p>
+    <a href="ubicacion .html" class="btn">ver ubicacion </a>
+   
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p> contacto@JBCreations.com<br> ‪‪‪+505 0000 0000‬‬‬</p>
+     <a href="contactanos .html" class="btn btn-outline-secondary m-2"> Escribenos</a>
+  </section>
+
+  <footer>
+    &copy; 2025 JB Creations. Todos los derechos reservados.
+  </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Inicialización segura -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Inicializa manualmente para asegurar el slide
+    var leftEl = document.getElementById('iconoIzquierdo');
+    var rightEl = document.getElementById('iconoDerecho');
+    if (leftEl) new bootstrap.Carousel(leftEl, { interval: 2000, ride: 'carousel' });
+    if (rightEl) new bootstrap.Carousel(rightEl, { interval: 2000, ride: 'carousel' });
+  });
+</script>
+</body>
+</html>
+`
